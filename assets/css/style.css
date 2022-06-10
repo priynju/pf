@@ -1195,10 +1195,12 @@ section .container {
     font-size: 14px;
     color: #DCDCDC;
     z-index: 999999;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 992px) {
     .credits {
+        bottom: 26px;
         text-align: center;
         padding: 10px;
         background: rgba(0, 0, 0, 0.8);
@@ -1211,5 +1213,34 @@ section .container {
 }
 
 .credits a:hover {
+    color: #f30017;
+}
+
+.credits-social {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #DCDCDC;
+    z-index: 999999;
+}
+
+@media (max-width: 992px) {
+    .credits-social {
+        text-align: center;
+        padding: 2.5px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.credits-social a {
+    color: #dc3545;
+    transition: 0.3s;
+}
+
+.credits-social a:hover {
     color: #f30017;
 }
