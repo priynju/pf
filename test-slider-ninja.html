@@ -69,6 +69,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="assets/css/ninja-slider.css" rel="stylesheet">
 
 </head>
 
@@ -86,41 +87,39 @@
                     <div class="col-lg-8">
                         <h2 class="portfolio-title">Typography</h2>
 
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/portfolio/portfolio-details-1.webp" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/portfolio/portfolio-details-2.webp" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/portfolio/portfolio-details-3.webp" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
 
-                                    <iframe width=100% height="480" src="https://www.youtube.com/embed/sFCAVI6nC0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div id='ninja-slider'>
+                            <div class="slider-inner">
+                                <ul>
+                                    <li>
+                                        <a class="ns-img" href="assets/img/portfolio/portfolio-details-1.webp"></a>
+                                    </li>
+                                    <li>
+                                        <div class="video">
+                                            <iframe src="https://player.vimeo.com/video/93292237" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                        <a class="ns-img" href="assets/img/portfolio/portfolio-details-2.webp"></a>
+                                        <div class="video-playbutton-layer"></div>
+                                    </li>
+                                    <li>
+                                        <div class="video">
+                                            <iframe src="https://www.youtube.com/embed/Bp119VFEjHE?enablejsapi=1&start=216&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1" frameborder="0" allowfullscreen data-autoplay="false"></iframe>
+                                        </div>
+                                        <a class="ns-img" href="assets/img/portfolio/portfolio-details-3.webp"></a>
+                                        <div class="caption">This video starts from 3:36</div>
+                                        <div class="video-playbutton-layer"></div>
+                                    </li>
+                                    <li>
+                                        <div class="video">
+                                            <video controls width="100%">
+                                                <source src="assets/vid/amar.mp4" type="video/mp4" />
+                                            </video>
+                                        </div>
+                                    </li>
 
-                                </div>
+                                    <div class="fs-icon"></div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
-
-
-
                     </div>
                     <div class="col-lg-4 portfolio-info">
                         <h3 style="padding-top: 12px;"> <strong>Project Information</strong> </h3>
@@ -149,8 +148,8 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="assets/js/ninja-slider.js"></script>
+    <script src="assets/js/ninjaVideoPlugin.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
