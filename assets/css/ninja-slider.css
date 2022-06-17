@@ -18,7 +18,7 @@
     width: 60px;
     height: 26px;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 2;
+    z-index: auto;
     color: white;
     text-align: center;
     font: bold 11px/26px arial;
@@ -44,7 +44,7 @@
 }
 
 #ninja-slider .slider-inner {
-    max-width: 800px;
+    max-width: 747px;
     margin: 0 auto;
     /*center-aligned */
     font-size: 0px;
