@@ -72,6 +72,10 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.min.css" rel="stylesheet">
 
+
+    <!-- reCaptcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
 </head>
 
 <body>
@@ -141,7 +145,37 @@
                             <ul>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>17 Dec 1999</span></li>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="">www.priyanuj.com</a></span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+919706186907">+91 97061 86907</a></span></li>
+                                
+
+
+                                <form id="myForm">
+                                    <!-- Your form fields go here -->
+                                
+                                    <!-- reCAPTCHA widget -->
+                                    <div class="g-recaptcha" data-sitekey="6LdUK40UAAAAABu9Hxci9KnGlQxgtWh-GSQyMBCp" data-callback="onRecaptchaSuccess"></div>
+                                
+                                    <!-- Hidden list item -->
+                                
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+919706186907">+91 97061 86907</a></span></li>
+                                    
+                                
+                                    <!-- Your submit button or other form controls -->
+                                  </form>
+                            
+                                
+                                  <!-- JavaScript to handle reCAPTCHA callback -->
+                                  <script>
+                                    function onRecaptchaSuccess() {
+                                      // Show the list item when reCAPTCHA is successfully completed
+                                      document.getElementById('myList').style.display = 'block';
+                                    }
+                                  </script>
+                                
+
+
+
+                                
+                                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+919706186907">+91 97061 86907</a></span></li> -->
                                 <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mumbai, India</span></li>
                             </ul>
                         </div>
