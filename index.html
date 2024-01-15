@@ -76,6 +76,12 @@
     <!-- reCaptcha v3 -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
+    <script type="text/javascript">
+        var onRecaptchaSuccess = function() {
+          alert("grecaptcha is ready!");
+        };
+      </script>
+
 </head>
 
 <body>
@@ -850,7 +856,10 @@
                     <div class="info-box">
                         <i class="bx bx-phone-call"></i>
                         <h3>Call Me</h3>
-                        <p><a href="tel:+919706186907">+91 97061 86907</a></p>
+                        <div class="g-recaptcha" data-sitekey="6LdEGlEpAAAAAPPC4veDmdXIUZPcD_XTEJyspwzM" data-callback="onRecaptchaSuccess" data-action='submit'>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+919706186907">+91 97061 86907</a></span></li>
+                        </div>
+                        <!-- <p><a href="tel:+919706186907">+91 97061 86907</a></p> -->
                     </div>
                 </div>
             </div>
